@@ -5,16 +5,15 @@ This repository contains a simple feedforward neural network implemented from sc
 ---
 
 ## Table of Contents
-[Overview](#overview)
-[Dataset]
-[Installation]
-[Usage]
-[Architecture]
-[Performance]
-[Contributing]
-[License]
-[Acknowledge]
-[Demo]
+
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Architecture](#architecture)
+- [Performance](#performance)
+- [Acknowledge](#acknowledge)
+- [Demo](#demo)
 
 ## Project Overview
 This project implements a feedforward neural network from scratch (using only NumPy), trained on the MNIST dataset to classify handwritten digits (0–9). It covers:
@@ -86,8 +85,12 @@ Ws, ces = train_nnet(train_Z, train_Y, hid_layer_sizes, initial_Ws, mb_size, lr,
  - The high training accuracy (99.99%) suggests the model fits the training data well, while the slightly lower validation and test accuracies (98.37% and 98.48%) indicate robust generalization. For comparison, advanced architectures like convolutional neural networks (CNNs) can achieve over 99% accuracy on MNIST. To further improve performance, consider experimenting with regularization (e.g., dropout) or advanced optimizers (e.g., Adam).
 
 ## Acknowledge
-- [MNIST Dataset]
+- [MNIST Dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 - [CSC14005 – Introduction to Machine Learning] VNU-University of Science (HCMUS)
 
 ## Demo
-
+- React Web App Demo:
+![Digit1](./Demo/digit1.png)
+![Digit2](./Demo/digit2.png)
+![Digit5](./Demo/digit5.png)
+![Digit8](./Demo/digit8.png)
