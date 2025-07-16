@@ -90,7 +90,7 @@ Ws, ces = train_nnet(train_Z, train_Y, hid_layer_sizes, initial_Ws, mb_size, lr,
 
 ## Demo
 - React Web App Demo:
-![Digit1](./Demo/digit1.png)
-![Digit2](./Demo/digit2.png)
-![Digit5](./Demo/digit5.png)
-![Digit8](./Demo/digit8.png)
+![Digit1](./Demo/d1.png)
+![Digit2](./Demo/d2.png)
+![Digit5](./Demo/d5.png)
+![Digit8](./Demo/d8.png)
