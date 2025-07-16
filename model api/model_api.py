@@ -152,7 +152,7 @@ def predict():
         Ws = load_model()
         prediction = compute_nnet_output(Ws, image, "class")
 
-        return jsonify({"digit": int(prediction[0])})
+        return jsonify({"digit": int(prediction[0]), "confidence": float(compute_nnet_output(Ws, image, "prob")[0][int(prediction[0])])})
 
     except ValueError as ve:
         return jsonify({"error": f"Value Error: {str(ve)}"}), 400
@@ -162,6 +162,10 @@ def predict():
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({"status": "ok"})
+
+@app.route('/', methods=['GET'])
+def index():
+    return jsonify({"message": "Welcome to MNIST Digit Classifier API"})
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
