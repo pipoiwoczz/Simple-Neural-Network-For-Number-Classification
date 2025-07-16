@@ -5,7 +5,6 @@ This repository contains a simple feedforward neural network implemented from sc
 ---
 
 ## Table of Contents
-
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Installation](#installation)
@@ -52,7 +51,11 @@ pip install numpy pickle gzip matplotlib tensorflow flask floask_cors
 ## Usage
 - **Run the notebook `model.ipynb`**: to train the model step by step and stored the model's weights as a `.pkl` file for further usage
 - **Run the API `model_api.py`**: to run the server api via flask
-- **Run the react web**: run `index.js` in directory `mnist-react-app` to run a website for visualization and testing
+- **Run the react web**: run
+```bash
+npm start
+```
+in directory `mnist-react-app` to run a website for visualization and testing
 
 ## Architecture
 - **Input layer**: 786 neurons (28x28 flattern images + 2 symmetry and intensity features)
