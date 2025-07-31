@@ -1,5 +1,7 @@
 # Simple Neural Network for Number Classification
 
+[![Watch the Demo](Demo/d1.png)](https://youtu.be/bPuqigg_S5k)
+
 This repository contains a simple feedforward neural network implemented from scratch using NumPy. The purpose of this project is educational: to help users understand the fundamental workings of neural networks, including forward propagation, backpropagation, and gradient descent. The network is designed to classify handwritten digits from the MNIST dataset.
 
 ---
